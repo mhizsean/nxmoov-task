@@ -7,7 +7,7 @@ const Layout = ({children}) => {
     return (
         <>
             <Flex>
-                <Box w='80px'>
+                <Box w='80px' h='100vh'>
                     <LeftBar />
                 </Box>
                 

@@ -23,8 +23,8 @@ import CalendarBody from "./partials/CalendarCells";
 const Calendar = () => {
 
   return (
-    <Container maxW="90%" mt="8" height='100vh'>
-      <HStack justifyContent="space-between">
+    <Stack width='fit-content' m='0 auto' height='calc(100vh - 72px)'>
+      <HStack justifyContent="space-between" p='6px 5px'>
         <Flex alignItems="center">
           <Text fontSize="2xl" fontWeight="semibold">
             Calendar
@@ -100,7 +100,7 @@ const Calendar = () => {
             <CalendarBody />
         </Box>
 
-    </Container>
+    </Stack>
   );
 };
 

@@ -21,7 +21,7 @@ import { ToggleICon } from "../assets/icons/Icons"
 
 const TopBar = () => {
     return (
-        <HStack as="nav" justifyContent='space-between' background='#fff' borderBottom='1px solid #e1eaed' alignItems='center' height='72px' px='3'>
+        <HStack  justifyContent='space-between' background='#fff' borderBottom='1px solid #e1eaed' alignItems='center' height='72px' px='3'>
 
                 <Box>
                     <Flex alignItems='center'>

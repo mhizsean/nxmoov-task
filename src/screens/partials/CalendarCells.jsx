@@ -18,7 +18,7 @@ const CalendarBody = () => {
   return (
     <HStack spacing={0} position="relative" w='100%' mt='20px'>
         <Event start={new Date("2022-10-25T06:30:00")} duration={90}>
-            <Popover placement="right" matchWidth="200px" >
+            <Popover placement="right" >
               <PopoverTrigger>
                 <Box onClick={onOpen} cursor='pointer'>
                     <TestEvent desc={'describ'} />

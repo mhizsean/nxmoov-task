@@ -1,18 +1,15 @@
 import { 
-    VStack, 
     Text, 
     Flex, 
     IconButton, 
     InputGroup, 
     Input,
     InputRightElement,
-    Image,
     Stack,
     Button,
     Box,
     Textarea,
     Avatar,
-    HStack,
     AvatarGroup
 } from "@chakra-ui/react"
 import ExpandIcon from "../../assets/icons/ExpandIcon"

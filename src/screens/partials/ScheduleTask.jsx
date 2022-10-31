@@ -10,10 +10,14 @@ import {
     Stack,
     Button,
     Box,
-    Textarea
+    Textarea,
+    Avatar,
+    HStack,
+    AvatarGroup
 } from "@chakra-ui/react"
 import ExpandIcon from "../../assets/icons/ExpandIcon"
-import { CopyIcon, EventCancelIcon, TimerIcon } from "../../assets/icons/Icons"
+import benImage from "../../assets/icons/man.png"
+import { CopyIcon, EventCancelIcon, TimerIcon, CalendarIcon } from "../../assets/icons/Icons"
 
 const ScheduleTask = () => {
     return (
@@ -30,6 +34,10 @@ const ScheduleTask = () => {
                     <IconButton bg={"transparent"} icon={<TimerIcon />} />
                     <Text>10:00 -12:00 pm</Text>
                 </Flex>
+                <Flex alignItems='center'>
+                    <IconButton bg={"transparent"} icon={<CalendarIcon />} />
+                    <Text>Tue 03/29/2022 </Text>
+                </Flex>
 
                 <Text fontSize='14px' fontWeight='500'>Interview link</Text>
                 <Flex justifyContent='space-between'>
@@ -41,8 +49,26 @@ const ScheduleTask = () => {
                     <Button bg='#0580a4' color='#fff' fontSize='md' _hover='none '>Go to callroom</Button>
                 </Flex>
 
-                <Box>
-                    
+                <Box >
+                    <Flex width='100%' border='1px solid #e1eaed' p='5px' justifyContent='space-between'>
+                        <Flex>
+                            <Avatar name="Benendict" src={benImage} />
+                            <Flex direction='column' ml='4px'>
+                                <Text fontSize='14px' fontWeight='500'>Benedict Swan</Text>
+                                <Text fontSize='12px' fontWeight='400'>ben10@gmail.com</Text>
+                            </Flex>
+                        </Flex>
+                        <Flex direction='column'>
+                            <Text fontSize='12px'>Interview Panel</Text>
+                            <AvatarGroup size='sm' max={4}>
+                                <Avatar name='Ryan Florence' src='https://bit.ly/ryan-florence' />
+                                <Avatar name='Segun Adebayo' src='https://bit.ly/sage-adebayo' />
+                                <Avatar name='Kent Dodds' src='https://bit.ly/kent-c-dodds' />
+                                <Avatar name='Prosper Otemuyiwa' src='https://bit.ly/prosper-baba' />
+                                <Avatar name='Christian Nwamba' src='https://bit.ly/code-beast' />
+                            </AvatarGroup>
+                        </Flex>
+                    </Flex>
                 </Box>
 
                 {/* textarea */}

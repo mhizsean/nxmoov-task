@@ -4,7 +4,7 @@ import Calendar from './screens/Calender';
 
 function App() {
   return (
-    <Stack background='#f8fafb'>
+    <Stack background='#f8fafb' height='100vh' w='full' overflow={'hidden'}>
       <Layout>
         <Calendar />
       </Layout>

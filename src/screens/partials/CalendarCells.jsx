@@ -21,7 +21,7 @@ const CalendarBody = () => {
             <Popover placement="right" matchWidth="200px" >
               <PopoverTrigger>
                 <Box onClick={onOpen} cursor='pointer'>
-                    <TestEvent />
+                    <TestEvent desc={'describ'} />
                 </Box>
               </PopoverTrigger>
 
@@ -120,7 +120,7 @@ const Event = ({ start, duration, children }) => {
      
     ]
 
-export const TestEvent = () =>  {
+export const TestEvent = ({title, desc, time}) =>  {
     return (
         <>
         {eventDetails?.map((ed, i) => (

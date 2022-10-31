@@ -1,0 +1,65 @@
+.CalendarColumn {
+  border-left: 1px solid #E1EAED;
+}
+
+.CalendarColumn:last-child {
+  border-right: 1px solid #E1EAED !important;
+  padding: 2px;
+}
+
+.CalendarCell:first-child {
+  border-top: 1px solid #E1EAED !important;
+}
+
+.CalendarCell:nth-child(odd) {
+  border-top: 3px dotted #E1EAED;
+  /* border: none; */
+}
+
+.Text {
+  text-align: end;
+  text-transform: capitalize;
+  padding-right: 6px;
+  margin-top: 7px;
+}
+
+
+.CalendarCell {
+  border-top: 1px solid #E1EAED;
+  width: 221px;
+}
+
+
+.CalendarCell:last-child {
+  border-bottom: 1px solid #E1EAED;
+  padding: 3px;
+}
+
+ .CalendarCells {
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  
+}
+
+.CalendarCells:nth-child(odd) {
+  opacity: 0;
+}  
+
+.Event {
+  --cell-height: 34px;
+  --cell-width: 222px;
+  --pixel-per-minute: calc(var(--cell-height) / 30);
+
+  border: none;
+  position: absolute;
+  width: var(--cell-width);
+  top: calc((var(--start) + 30) * var(--pixel-per-minute));
+  left: calc((var(--day) + 1) * var(--cell-width));
+  height: calc(var(--duration) * var(--pixel-per-minute));
+
+  background-color: #fff;
+  border-left: 4px solid #AB56B2 !important;
+  border: 1px solid #E1EAED;
+  border-radius: 4px;
+}

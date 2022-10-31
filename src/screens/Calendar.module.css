@@ -1,5 +1,6 @@
 .CalendarColumn {
   border-left: 1px solid #E1EAED;
+  background-color: #fff;
 }
 
 .CalendarColumn:last-child {
@@ -21,14 +22,13 @@
   text-transform: capitalize;
   padding-right: 6px;
   margin-top: 7px;
+  color: #697275;
 }
-
 
 .CalendarCell {
   border-top: 1px solid #E1EAED;
   width: 221px;
 }
-
 
 .CalendarCell:last-child {
   border-bottom: 1px solid #E1EAED;
@@ -39,7 +39,7 @@
   text-align: center;
   padding-top: 20px;
   position: relative;
-  
+  color: #697275;
 }
 
 .CalendarCells:nth-child(odd) {

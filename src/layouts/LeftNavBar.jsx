@@ -10,7 +10,7 @@ import card from '../assets/icons/card.png'
 
 const LeftBar = () => {
     return (
-        <VStack background='#2c273d' padding='0' height='100%'>
+        <VStack background='#2c273d' padding='0' height='full'>
            <Image src={logo} alt="logo" marginTop='4' marginBottom='8' />
 
            <VStack spacing='30px'>

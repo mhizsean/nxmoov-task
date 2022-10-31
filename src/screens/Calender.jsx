@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Center,
-  Container,
   Divider,
   Flex,
   HStack,
@@ -24,6 +23,7 @@ const Calendar = () => {
 
   return (
     <Stack width='fit-content' m='0 auto' height='calc(100vh - 72px)'>
+      
       <HStack justifyContent="space-between" p='6px 5px'>
         <Flex alignItems="center">
           <Text fontSize="2xl" fontWeight="semibold">

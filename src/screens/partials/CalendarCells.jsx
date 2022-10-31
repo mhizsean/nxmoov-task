@@ -16,7 +16,7 @@ const CalendarBody = () => {
     const { onOpen } = useDisclosure();
 
   return (
-    <HStack spacing={0} position="relative" w='100%' mt='20px'>
+    <HStack spacing={0} position="relative" w='100%'>
         <Event start={new Date("2022-10-25T06:30:00")} duration={90}>
             <Popover placement="right" >
               <PopoverTrigger>
@@ -31,7 +31,7 @@ const CalendarBody = () => {
             </Popover>
         </Event>
         <Event start={new Date("2022-10-27T13:00:00")} duration={90} >
-            <Popover placement="right" matchWidth="200px" >
+            <Popover placement={"right" || "left"} matchWidth="200px" >
               <PopoverTrigger>
                 <Box onClick={onOpen} cursor='pointer'>
                     <TestEvent />
@@ -74,7 +74,6 @@ const columns = days.length;
 const times = [];
 
 for (let t = 6; t <= 15; t += 0.5) {
-  console.log(t);
   times.push(t);
 }
 
@@ -125,11 +124,11 @@ export const TestEvent = ({title, desc, time}) =>  {
         <>
         {eventDetails?.map((ed, i) => (
                 <Stack p='6px' key={i}>
-                    <Text fontSize='12px' fontWeight='500'>{ed.title}</Text>
+                    <Text fontSize='12px' fontWeight='500' color='#17191A'>{ed.title}</Text>
 
-                    <Text fontSize='12px'>{ed.desc}</Text>
+                    <Text fontSize='12px' color='#697275'>{ed.desc}</Text>
 
-                    <Text fontSize='12px'>{ed.time}</Text>
+                    <Text fontSize='12px' color='#697275'>{ed.time}</Text>
                 </Stack>
         ))
         }
